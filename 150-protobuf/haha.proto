@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+message User{
+  required string Id = 1;
+  required string DisplayName = 2;
+  required int64 Age = 13;
+  optional string Address = 4;
+  optional int32 BirthYear = 10;
+  map<string, string>extra = 11;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+enum Gender{
+  girl = 0;
+  boy = 1;
+  unknown = 2;
+}
+message User{
+  string Id = 1;
+  string DisplayName = 2;
+  int32 Age = 3;
+  string Address = 4;
+  int32 BirthYear = 5;
+  int64 BirthDateTime = 6;
+  Gender gender = 7;
+  map<string, string>extra = 8;
+}
+message UserList{
+  repeated User users = 1;
+  map<string, User>userMap = 2;
+}
+
+message UserAndUserList{
+  User currentUser = 1;
+  UserList friendList = 2;
+  int64 friendCount = 3;
+}

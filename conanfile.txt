@@ -1,0 +1,8 @@
+[requires]
+nlohmann_json/3.11.2
+protobuf/3.13.0
+cpp-httplib/0.11.1
+eigen/3.4.0
+toml11/3.7.1
+[generators]
+cmake
