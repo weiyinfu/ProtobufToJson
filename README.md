@@ -12,7 +12,7 @@ to disable this conversion. But I really need this feature.
 
 # install
 1. add python bin to `$PATH`
-2. install conan: `pip install conan==1.53`
+2. install conan: `pip install conan==1.59.0`
 3. run `update-conan` to install dependencies.
 
 # How to use this library?

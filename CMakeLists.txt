@@ -18,3 +18,8 @@ target_link_libraries(protobuf_v3  ${CONAN_LIBS})
 # proto v3大规模测试
 add_executable(protobuf_v3_test_many 150-protobuf/03-充分测试proto和json转换.cpp 150-protobuf/gen3/testMany.pb.cc 150-protobuf/proto2json/proto2json.cpp)
 target_link_libraries(protobuf_v3_test_many  ${CONAN_LIBS})
+
+
+# proto v3大规模测试
+add_executable(protobuf_v3_json 150-protobuf/001-usejson.cpp)
+target_link_libraries(protobuf_v3_json  ${CONAN_LIBS})

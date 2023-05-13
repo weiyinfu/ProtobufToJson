@@ -183,7 +183,16 @@ void caseTestEmpty2() {
     cout << proto2json(u) << endl;
 }
 
+void case5_emptyStruct() {
+    weiyinfu::proto2json::PrintOptions options;
+    EmptyStruct x;
+    cout << weiyinfu::proto2json::pb2jsonString(x, options) << endl;
+    cout << proto2json(x) << endl;
+}
+
 int main() {
-    case4_efficiency_test();
+//    case4_efficiency_test();
+//    case5_emptyStruct();
+    caseTestEmpty2();
     return 0;
 }

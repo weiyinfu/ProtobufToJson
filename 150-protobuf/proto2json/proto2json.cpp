@@ -136,7 +136,7 @@ namespace weiyinfu {
         json pb2json(const Message &msg, const PrintOptions &options) {
             const Descriptor *descriptor = msg.GetDescriptor();
             const Reflection *ref = msg.GetReflection();
-            json json_obj;
+            json json_obj(json::object());
 
             if (descriptor == nullptr || ref == nullptr) {
                 return nullptr;

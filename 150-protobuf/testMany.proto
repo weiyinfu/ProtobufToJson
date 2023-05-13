@@ -24,3 +24,6 @@ message UserAndUserList{
   UserList friendList = 2;
   int64 friendCount = 3;
 }
+message EmptyStruct{
+
+}
